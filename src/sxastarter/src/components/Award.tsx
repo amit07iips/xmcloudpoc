@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentParams, ComponentRendering, Field, ImageField, NextImage as JssImage, Text as JSSText } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ComponentParams, Field, ImageField, NextImage as JssImage, Text as JSSText } from '@sitecore-jss/sitecore-jss-nextjs';
 
 export interface AwardFields{
   Heading: Field<string>;

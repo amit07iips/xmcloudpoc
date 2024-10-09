@@ -50,21 +50,19 @@ export const Default = (props: HeaderNavProps): JSX.Element => {
       <div className="layoutWrap">
         <div className="navbar-header">
           <a className="navbar-brand" href="">
-            <img src={props.fields?.data?.item?.logo?.src} />
+            <img src={props.fields?.data?.item?.logo?.src} alt="image" />
           </a>
         </div>
 
-        <div className="collapse navbar-collapse js-navbar-collapse">
-          <ul className="nav navbar-nav">
-            {props.fields?.data?.layout?.item?.firstlevel?.results?.map((pageItem, idx) => {
-              return (
-                <li key={idx}>
-                  <a href={pageItem.url?.path}>{pageItem.navigationTitle?.value}</a>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        <ul className="nav navbar-nav">
+          {props.fields?.data?.layout?.item?.firstlevel?.results?.map((pageItem, idx) => {
+            return (
+              <li key={idx}>
+                <a href={pageItem.url?.path}>{pageItem.navigationTitle?.value}</a>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </nav>
   );

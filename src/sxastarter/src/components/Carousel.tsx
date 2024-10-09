@@ -32,7 +32,7 @@ interface CarouselProps {
 
 export const Default = (props: CarouselProps): JSX.Element => {
   return (
-    <div className="container">
+    <div className="carousel-container">
       {
         <Slider {...props.setting}>
           {props.fields.SliderList.map((carousel, idx) => {

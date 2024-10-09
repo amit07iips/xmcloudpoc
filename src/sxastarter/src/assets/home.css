@@ -1541,9 +1541,7 @@ hr.line {
     z-index: 1
 }
 
-.slick-prev {
-    left: -50px
-}
+
 
 @media (min-width: 816px) and (max-width: 1024px) {
     .slick-prev {
@@ -1555,9 +1553,7 @@ hr.line {
     animation: bounceArrowLeft 1.5s infinite
 }
 
-.slick-next {
-    right: -50px
-}
+
 
 @media (min-width: 816px) and (max-width: 1024px) {
     .slick-next {
@@ -7745,23 +7741,6 @@ element.style {
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-
-
-.img-body img {
-    display: flex;
-    margin: 0 auto;
-    height: 40vh;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .img-body {
-    width: 400px;
-    aspect-ratio: 1/1;
-    outline-color: red;
-    display: inline-block;
-  }
   div#content {
     margin-top: 114px;
 }

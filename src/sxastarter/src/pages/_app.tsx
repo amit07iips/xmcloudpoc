@@ -5,6 +5,8 @@ import Bootstrap from 'src/Bootstrap';
 
 import 'assets/main.scss';
 import 'assets/award.css';
+import 'assets/home.css';
+import 'assets/bootstrapHome.css';
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;

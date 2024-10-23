@@ -650,3 +650,10 @@ nav.top-nav-collapse {
     color:#aaa;
     margin-bottom:0;
   }
+
+  .success-image img {
+    align-content: center;
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

@@ -49,7 +49,7 @@ export const Default = (props: HeaderNavProps): JSX.Element => {
     <nav className="navbar navbar-fixed-top">
       <div className="layoutWrap">
         <div className="navbar-header">
-          <a className="navbar-brand" href="">
+          <a className="navbar-brand" href="/">
             <img src={props.fields?.data?.item?.logo?.src} alt="image" />
           </a>
         </div>

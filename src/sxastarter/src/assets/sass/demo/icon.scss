@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "gilroybold";
+    src: url("fonts/Gilroy-Bold.eot");
+    src: url("fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/gilroy/Gilroy-Bold.woff") format("woff"),
+        url("fonts/Gilroy-Bold.ttf") format("truetype"); 
+        font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "gilroy";
+    src: url("fonts/Gilroy-Medium.eot");
+    src: url("fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+        url("fonts/Gilroy-Medium.woff2") format("woff2"),
+        url("fonts/Gilroy-Medium.woff") format("woff"),
+        url("fonts/Gilroy-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+      font-family: '3w-icons';
+      src:  url('fonts/3w-icons.eot?4ljrh8');
+      src:  url('fonts/3w-icons.eot?4ljrh8#iefix') format('embedded-opentype'),
+        url('fonts/3w-icons.ttf?4ljrh8') format('truetype'),
+        url('fonts/3w-icons.woff?4ljrh8') format('woff'),
+        url('fonts/3w-icons.svg?4ljrh8#3w-icons') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+    }
+    
+    [class^="icon-"], [class*=" icon-"] {
+      /* use !important to prevent issues with browser extensions that change fonts */
+      font-family: '3w-icons' !important;
+      speak: never;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+    
+      /* Better Font Rendering =========== */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .icon-enhanced-passenger-space:before {
+      content: "\e93b";
+    }
+    .icon-passager-drive-modes:before {
+      content: "\e935";
+    }
+    .icon-kargo-covered-battery:before {
+      content: "\e936";
+    }
+    .icon-kargo-iBSG-motor:before {
+      content: "\e937";
+    }
+    .icon-kargo-charger-holder:before {
+      content: "\e938";
+    }
+    .icon-passager-connected-features:before {
+      content: "\e939";
+    }
+    .icon-passager-li-ion-battery:before {
+      content: "\e93a";
+    }
+    .icon-led-lights:before {
+      content: "\e91f";
+    }
+    .icon-compact-design:before {
+      content: "\e920";
+    }
+    .icon-payload-suspension:before {
+      content: "\e921";
+    }
+    .icon-battery-technology:before {
+      content: "\e922";
+    }
+    .icon-luggage-boot:before {
+      content: "\e930";
+    }
+    .icon-superior-suspension:before {
+      content: "\e934";
+    }
+    .icon-drrowdown:before {
+      content: "\e910";
+    }
+    .icon-arrowright:before {
+      content: "\e92d";
+    }
+    .icon-arrowup:before {
+      content: "\e92e";
+    }
+    .icon-tickicon:before {
+      content: "\e92f"; 
+    }
+    .icon-dealerdetect:before {
+      content: "\e932"; 
+    }
+    .icon-arrowleft:before {
+      content: "\e933";
+    }
+    .icon-search:before {
+      content: "\e92c";
+    }
+    .icon-electricals:before {
+      content: "\e923"; 
+    }
+    .icon-engine:before {
+      content: "\e924"; 
+    }
+    .icon-gradability:before {
+      content: "\e925"; 
+    }
+    .icon-suspension:before {
+      content: "\e926"; 
+    }
+    .icon-transmission:before {
+      content: "\e927"; 
+    }
+    .icon-tyres:before {
+      content: "\e928"; 
+    }
+    .icon-brakes:before {
+      content: "\e929"; 
+    }
+    .icon-chassis:before {
+      content: "\e92a"; 
+    }
+    .icon-dimension:before {
+      content: "\e92b"; 
+    }
+    .icon-error:before {
+      content: "\e931"; 
+    }
+    .icon-thank-you:before {
+      content: "\e91d";
+      color: #2a8c15;
+    }
+    .icon-edit:before {
+      content: "\e91c";
+      color: #305ba2;
+    }
+    .icon-capacity:before {
+      content: "\e919";
+    }
+    .icon-support:before {
+      content: "\e91a";
+    }
+    .icon-savings:before {
+      content: "\e91b";
+    }
+    .icon-check:before {
+      content: "\e918";
+    }
+    .icon-media-bluetooth:before {
+      content: "\e917";
+    }
+    .icon-maintenance-cost:before {
+      content: "\e913";
+    }
+    .icon-best-mileage:before {
+      content: "\e914";
+    }
+    .icon-vibration-comfort:before {
+      content: "\e915";
+    }
+    .icon-top-speed:before {
+      content: "\e916";
+    }
+    .icon-mileage:before {
+      content: "\e90f";
+    }
+    .icon-maintenance:before {
+      content: "\e91e";
+    }
+    .icon-navigate:before {
+      content: "\e911";
+    }
+    .icon-call:before {
+      content: "\e912";
+    }
+    .icon-direction:before {
+      content: "\e90e";
+    }
+    .icon-locate:before {
+      content: "\e90d";
+    }
+    .icon-right-next:before {
+      content: "\e90c";
+    }
+    .icon-close-circle:before {
+      content: "\e90b";
+    }
+    .icon-arrow-down:before {
+      content: "\e900";
+    }
+    .icon-arrow-left:before {
+      content: "\e901";
+    }
+    .icon-arrow-right:before {
+      content: "\e902";
+    }
+    .icon-arrow-up1:before {
+      content: "\e903";
+    }
+    .icon-list:before {
+      content: "\e904";
+    }
+    .icon-play-arrow:before {
+      content: "\e905";
+    }
+    .icon-plus:before {
+      content: "\e906";
+    }
+    .icon-specification_engine:before {
+      content: "\e907";
+    }
+    .icon-specification_fuel:before {
+      content: "\e908";
+    }
+    .icon-specification_suspension:before {
+      content: "\e909";
+    }
+    .icon-street-map:before {
+      content: "\e90a";
+    }
+    
+    

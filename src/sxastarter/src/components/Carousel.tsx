@@ -19,31 +19,50 @@ export interface CarouselCard {
 interface CarouselProps {
   params: ComponentParams;
   fields: CarouselListFields;
-  setting: {
-    dots: true;
-    speed: 500;
-    slidesToShow: 2;
-    slidesToScroll: 2;
-    infinite: true;
-    autoplay: true;
-    autoplaySpeed: 1000;
-  };
 }
 
 export const Default = (props: CarouselProps): JSX.Element => {
+  const setting = {
+    dots: true, // Show dots below the slider
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: true,
+    arrows: false,
+  };
   return (
-    <div className="carousel-container">
-      {
-        <Slider {...props.setting}>
-          {props.fields.SliderList.map((carousel, idx) => {
-            return (
-              <div className="img-body" key={idx}>
-                <JssImage field={carousel.fields.Path} />
+    <>
+      <section className="hero-wrapper">
+        {props.fields.SliderList.length > 0 ? (
+          <Slider {...setting}>
+            {props.fields.SliderList.map((carousel, idx) => (
+              <div key={idx} className="slider-item">
+                <div className="slide-main">
+                  <div className="slide-img">
+                    <picture>
+                      <source
+                        media="(min-width: 1024px)"
+                        srcSet={carousel.fields.Path.value?.src}
+                        type="image/webp"
+                      />
+                      <JssImage field={carousel.fields.Path} sizes="(max-width: 991px)" />
+                    </picture>
+                  </div>
+                  <div className="slide__content-thankyou">
+                    <div className="headings">
+                      <a className="btn primary-gradient-btn btn-lg">Book Now</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-            );
-          })}
-        </Slider>
-      }
-    </div>
+            ))}
+          </Slider>
+        ) : (
+          <p>Loading banners...</p>
+        )}
+      </section>
+    </>
   );
 };

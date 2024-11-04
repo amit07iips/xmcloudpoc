@@ -5,7 +5,6 @@ import {
   Field,
   ImageField,
   RichText,
-  Text as JSSText,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 export interface FeatureFields {
@@ -33,7 +32,7 @@ export const Default = (props: FeaturesProps): JSX.Element => {
   // const id = props.params.RenderingIdentifier;
   const [activeTab, setActiveTab] = useState('tab-0');
 
-  const handleTabChange = (tab) => {
+  const handleTabChange = (tab: React.SetStateAction<string>) => {
     setActiveTab(tab);
   };
   console.log(props);

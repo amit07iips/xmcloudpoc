@@ -2,11 +2,14 @@ import type { AppProps } from 'next/app';
 import { I18nProvider } from 'next-localization';
 import { SitecorePageProps } from 'lib/page-props';
 import Bootstrap from 'src/Bootstrap';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 import 'assets/main.scss';
-import 'assets/award.css';
-import 'assets/home.css';
-import 'assets/bootstrapHome.css';
+// import 'assets/award.css';
+// import 'assets/home.css';
+// import 'assets/bootstrapHome.css';
 
 function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element {
   const { dictionary, ...rest } = pageProps;

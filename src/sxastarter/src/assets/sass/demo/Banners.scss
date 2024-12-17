@@ -1,0 +1,85 @@
+@import '../../../assets/sass/abstracts/mixinsss.scss';
+@import '../../../assets/sass/abstracts/variables.scss';
+.hero-wrapper {
+    max-width: 100%;
+    margin: auto;
+    padding: 0px;
+    .slider-item {
+        position: relative;
+        text-align: center;
+        img {
+            width: 100%;
+            height: auto;
+          }
+      }
+    .slide-main{
+        position: relative;
+        .slide__content-thankyou{
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            transform: translate(-60%, -50%);
+            max-width: 57rem;
+            .headings{
+                .btn {
+                    &.primary-gradient-btn{
+                        &.btn-lg{
+                            background: var(--grey-33);
+                            @include radius(.4rem);
+                            @include font(1.6rem,
+                            500,
+                            var(--white));
+                            font-family: var( --font-gotham);
+                            padding: 1rem 2rem;
+                            text-transform: uppercase;
+                            letter-spacing: 0.2px;
+                            min-width: auto;
+                            border: 1px solid var(--grey-33);
+                            box-shadow: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .slick-dots {
+        position: absolute;
+        margin-bottom: 0;
+        bottom: 2.5rem;
+        background: oklch(0 0 0 / .2);
+        width: auto;
+        border-radius: 5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: max-content;
+        padding: 0 .5rem;
+        li {
+            width: 2rem;
+            height: 2rem;
+            margin: 0rem;
+            button {
+                &:before {
+                    font-size: 1.4rem;
+                    color: var(--white);
+                    line-height: 2rem;
+                    opacity: .3;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+            &.slick-active{
+                button{
+                    &:before{
+                        font-size: 1.4rem;
+                        color: var(--white);
+                        opacity: 1;
+                        line-height: 2rem;
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}

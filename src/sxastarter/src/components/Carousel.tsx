@@ -7,7 +7,7 @@ import {
 import Slider from 'react-slick';
 
 export interface CarouselListFields {
-  SliderList: Array<CarouselCard>;
+  items: Array<CarouselCard>;
 }
 
 export interface CarouselCard {
@@ -35,9 +35,9 @@ export const Default = (props: CarouselProps): JSX.Element => {
   return (
     <>
       <section className="hero-wrapper">
-        {props.fields.SliderList.length > 0 ? (
+        {props.fields.items.length > 0 ? (
           <Slider {...setting}>
-            {props.fields.SliderList.map((carousel, idx) => (
+            {props.fields.items.map((carousel, idx) => (
               <div key={idx} className="slider-item">
                 <div className="slide-main">
                   <div className="slide-img">
